@@ -9,12 +9,14 @@
 // There is no warranty, use at your own risk.
 //
 
+require_once("def.php");
+
 // Connect to the MySQL database
-if(!mysql_connect("localhost", "www-data", "ablative"))
+if(!mysql_connect(DB_HOST, DB_USER, DB_PASS))
 {
 	die("Couldn't connect to database: ".mysql_error());
 }
-mysql_select_db("FOOD_DB");
+mysql_select_db(DB_DATABASE);
 
 // Get the food and nutrient being queried.
 $food = isset($_GET["food"]) ? $_GET["food"] : null;
