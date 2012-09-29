@@ -1,0 +1,20 @@
+/* style.css for nutritional information app
+ */
+
+body, td {
+  font-family: sans-serif;
+  color: #000;
+}
+
+body {
+  background: #555;
+}
+
+div.section {
+  background: #fff;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
